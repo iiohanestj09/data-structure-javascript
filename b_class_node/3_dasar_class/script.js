@@ -59,12 +59,14 @@ class Example {
 }
 let e = new Example();
 console.log(e.showSecret());
+// console.log(e.#secret);      Error
 
 
 /* 5. Static Method
 - static = method yg menempel ke class, bukan ke Object
 - Bisa dipanggil tanpa bikin object -> (MathUtil.square(5))
-- Biasanya dipakai utk Helper Function (misalnya perhitungan matematika)  */ 
+- Biasanya dipakai utk Helper Function (misalnya perhitungan matematika)
+- Note: Static method tidak bisa diakses dari instance  */ 
 class MathUtil {
     static square(x) {
         return x * x;
@@ -76,3 +78,5 @@ class MathUtil {
 }
 console.log(MathUtil.square(5));
 console.log(MathUtil.add(1, 3));
+let m = new MathUtil();
+// console.log(m.square(5));    Error: m.square is not a function
