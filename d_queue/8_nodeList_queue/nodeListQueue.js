@@ -18,8 +18,8 @@ class Queue {
         else {
             this.rear.next = newNode;
             this.rear = newNode;
-            this.length++;
         }
+        this.length++;
     }
 
     dequeue() {
