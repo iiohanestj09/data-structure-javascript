@@ -14,7 +14,7 @@ class Stack {
 
     // Pop: hapus elemen paling atas
     pop() {
-        if (this.items.length === 0) {
+        if (this.size() === 0) {
             console.log("Gagal pop, Stack kosong");
             return null;
         }
@@ -23,7 +23,7 @@ class Stack {
 
     // Peek: lihat elemen paling atas (top)
     peek() {
-        if (this.items.length === 0) return null;
+        if (this.size() === 0) return null;
         else return this.items[this.items.length - 1];
     }
 
