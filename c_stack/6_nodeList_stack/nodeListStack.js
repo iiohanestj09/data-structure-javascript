@@ -19,10 +19,13 @@ class Stack {
     }
 
     pop() {
-        if (this.top === null) console.log("Gagal pop, Stack kosong");
+        if (this.top === null) {
+            console.log("Gagal pop, Stack kosong");
+            return null;
+        }
         else {
-            this.top = this.top.next;
             this.length--;      
+            return this.top = this.top.next;
             /* Tidak perlu free memory sebuah Node, 
             Di bahasa pemorgraman tingkat tinggi (JS, Python, Java, dll) punya Garbage Collector (GC),
             yg mana 'Ketika sebuah objek(node) sudah tidak direferensikan lagi maka akan dianggap sampah (garbage) dan nanti akan dibersihkan oleh GC'  */ 
@@ -30,12 +33,8 @@ class Stack {
     }
 
     peek() {
-        if (this.top === null) console.log("Gagal peek, Stack kosong!");
-        else console.log(`Top: [${this.top.value}]`);
-    }
-
-    size() {
-        return this.length;
+        if (this.top === null) return null;
+        else return this.top.value;
     }
 
     display() {
