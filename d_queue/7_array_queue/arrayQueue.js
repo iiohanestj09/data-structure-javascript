@@ -23,7 +23,7 @@ class Queue {
     }
 
     display() {
-        console.log("[ " + this.items.join(" -> ") + " ]");
+        console.log("[ " + this.items.join(" <- ") + " ]");
     }
 }
 
