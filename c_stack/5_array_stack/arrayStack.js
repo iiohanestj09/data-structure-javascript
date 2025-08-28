@@ -1,6 +1,5 @@
 /* Stack = struktur data dengan prinsip LIFO (Last In, First Out
-elemen Terakhir yg masuk adalah yg pertama keluar.  
-=> arrayStack akan menyimpan Top nya berupa index items  */
+elemen Terakhir yg masuk adalah yg pertama keluar.  */
 
 class Stack {
     constructor() {
