@@ -38,18 +38,15 @@ class Stack {
     }
 
     display() {
-        if (this.top === null) console.log("Gagal display, Stack kosong!");
-        else {
-            let current = this.top;
-            let result = "";
+        let current = this.top;
+        let result = "[ ";
 
-            while (current !== null) {
-                result += `[${current.value}] -> `;
-                current = current.next; 
-            }
-            result += "null";
-            console.log(result);
+        while (current !== null) {
+            result += `${current.value} -> `;
+            current = current.next; 
         }
+        result += "null ]";
+        console.log(result);
     }
 }
 
