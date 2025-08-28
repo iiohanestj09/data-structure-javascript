@@ -17,7 +17,7 @@ class Queue {
         } else return this.items.shift();
     }
 
-    front() {
+    peek() {
         if (this.items.length === 0) return null;
         else return this.items[0];
     }
