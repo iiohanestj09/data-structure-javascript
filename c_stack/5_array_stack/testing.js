@@ -6,6 +6,7 @@ st.push(30);
 
 st.pop();
 st.push(40);
+console.log(st.size());
 
 st.peek();
 st.display();
