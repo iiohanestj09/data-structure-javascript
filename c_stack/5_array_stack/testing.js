@@ -1,5 +1,5 @@
 const Stack = require("./arrayStack");  // import class
-let st = new Stack();
+const st = new Stack();
 
 st.pop();
 console.log(st.peek());
