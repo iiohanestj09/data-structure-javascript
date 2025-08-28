@@ -28,7 +28,8 @@ class Stack {
     
     // Display: tampilkan isi stack
     display() {
-        console.log("[ " + this.items.slice().reverse().join(" -> ") + " ]")
+        if (this.items.length === 0) console.log("[ null ]");
+        else console.log("[ " + this.items.slice().reverse().join(" -> ") + " -> null ]")
         // .slice() -> bikin salinan array supaya .reverse() dan .join() tidak mengubah objek asli
         // .slice() -> sering dipakai buat console.log utk menampilkan operasi sementara tanpa mengubah objek asli
     }
