@@ -12,6 +12,6 @@ st.pop();
 st.push(40);
 
 console.log(st.peek());
-console.log(st.size());
+console.log(st.items.length);
 
 st.display();
