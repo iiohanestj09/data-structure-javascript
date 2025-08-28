@@ -24,8 +24,10 @@ class Stack {
             return null;
         }
         else {
+            let removedValue = this.top.value;     // (opsional) kalau perlu simpan value hasil pop
+            this.top = this.top.next;
             this.length--;      
-            return this.top = this.top.next;
+            return removedValue;
             /* Tidak perlu free memory sebuah Node, 
             Di bahasa pemorgraman tingkat tinggi (JS, Python, Java, dll) punya Garbage Collector (GC),
             yg mana 'Ketika sebuah objek(node) sudah tidak direferensikan lagi maka akan dianggap sampah (garbage) dan nanti akan dibersihkan oleh GC'  */ 
