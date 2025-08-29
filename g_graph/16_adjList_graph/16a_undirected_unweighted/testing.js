@@ -1,25 +1,25 @@
 const Graph = require("./script");
 
-let g = new Graph();
+let gr = new Graph();
 
-g.addVertex(0); 
-g.addVertex(3);
-g.addVertex(5);
+gr.addVertex(0); 
+gr.addVertex(3);
+gr.addVertex(5);
 
-g.addEdge(0, 1);
-g.addEdge(0, 2);
-g.addEdge(0, 3);
-g.addEdge(0, 9);
-g.addEdge(1, 2);    
-g.addEdge(2, 3);
-g.addEdge(3, 4);
-g.addEdge(4, 5);
+gr.addEdge(0, 1);
+gr.addEdge(0, 2);
+gr.addEdge(0, 3);
+gr.addEdge(0, 9);
+gr.addEdge(1, 2);    
+gr.addEdge(2, 3);
+gr.addEdge(3, 4);
+gr.addEdge(4, 5);
 
-g.removeEdge(2, 0);
-g.removeVertex(4);
+gr.removeEdge(2, 0);
+gr.removeVertex(4);
 
-g.addVertex(99);    // adjList = dinamis, bisa menambah vertex atau edge tanpa batasan
-g.addEdge(5, 6);
-g.addEdge(6, 7);
+gr.addVertex(99);    // adjList = dinamis, bisa menambah vertex atau edge tanpa batasan
+gr.addEdge(5, 6);
+gr.addEdge(6, 7);
 
-g.display();
+gr.display();
