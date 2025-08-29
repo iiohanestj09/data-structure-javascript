@@ -13,6 +13,10 @@ class Graph {
         this.adjMatrix[source][destination] = weight;   // karena directed -> 1 arah
     }
 
+    removeEdge(v1, v2) {
+        this.adjMatrix[v1][v2] = 0;
+    }
+    
     display() {
         console.log("   " + Array.from({ length: this.adjMatrix.length }, (_, i) => i).join("  "));
         for (let i = 0; i < this.adjMatrix.length; i++) {

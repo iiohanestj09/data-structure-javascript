@@ -18,11 +18,17 @@ gr.addEdge(4, 0, 3);
 gr.addEdge(4, 1, 6);
 gr.addEdge(4, 2, 7);
 gr.addEdge(4, 3, 4);
+
+gr.removeEdge(0, 4);
+gr.removeEdge(1, 0);
+gr.removeEdge(2, 1);
+gr.removeEdge(3, 2);
+
 gr.display();
 
 /* 0 1 2 3 4
-0| 0 3 0 2 6 
-1| 8 0 9 0 2
-2| 3 1 0 0 4
-3| 1 0 6 0 8
+0| 0 3 0 2 0 
+1| 0 0 9 0 2
+2| 3 0 0 0 4
+3| 1 0 0 0 8
 4| 3 6 7 4 0  */
