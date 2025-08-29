@@ -1,3 +1,13 @@
+/* 1. Adjacency Matrix
+   + Kelebihan:
+     - Implementasi sederhana (array 2D).
+     - Cek apakah ada edge antara dua vertex (u, v) → O(1).
+     - Cocok untuk graph padat (dense graph) di mana jumlah edge mendekati V^2.
+   - Kekurangan:
+     - Boros memori, selalu butuh O(V^2), meskipun edge sedikit.
+     - Susah ditambah vertex baru (harus buat matrix baru lebih besar).
+     - Traversal semua edge lebih lambat (butuh cek semua kolom/baris).  */ 
+
 /* Graph dengan Adjacency Matrix versi undirected dan unweighted
 -> undirected (tidak punya arah) = matrixnya akan simetris (A -> B berarti B -> A)
 -> unweighted (tidak berbobot) = value matrixnya akan 1 jika terhubung, 0 jika tidak  */
@@ -15,6 +25,11 @@ class Graph {
         // karena unweighted -> bobotnya bernilai 1
         this.adjMatrix[v1][v2] = 1;
         this.adjMatrix[v2][v1] = 1;  // karena undirected -> 2 arah
+    }
+
+    removeEdge(v1, v2) {
+        this.adjMatrix[v1][v2] = 0;
+        this.adjMatrix[v2][v1] = 0;
     }
 
     display() {
