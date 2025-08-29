@@ -3,7 +3,7 @@
 -> weighted (berbobot) = adjList akan menyimpan vertex ketetanggannya saja tanpa menyimpan value 1 atau 0 */
 
 class Graph {
-    constructor(vertices) {
+    constructor() {
         this.adjList = new Map();
     }
 
