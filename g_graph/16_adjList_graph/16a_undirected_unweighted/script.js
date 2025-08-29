@@ -50,10 +50,9 @@ class Graph {
 
     removeVertex(v) {
         if (this.adjList.has(v)) {
-            // hapus semua edge yg muncul
+            // hapus semua jejak v dari semua neighboor sebelum delete 'v'
             for (let neighbor of this.adjList.get(v)) {
                 this.removeEdge(v, neighbor);   
-                // karena undirected, selain hapus vertex dan tetangganya, juga harus hapus edge yg bertetangga dengan vertex ini
             }
             // hapus vertex-nya sendiri
             this.adjList.delete(v);
