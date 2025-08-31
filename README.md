@@ -1,0 +1,5 @@
+📂 Lihat juga Repositori lainnya yang relevan dengan:
+|  JavaScript Language                                                                         | Data Structure                                                                                |
+|----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| [Basic Programming JavaScript](https://github.com/iiohanestj09/basic-programming-javascript) | [Data Structure C](https://github.com/iiohanestj09/data-structure-c)                          |
+|                                                                                              | [Data Structure Go](https://github.com/iiohanestj09/data-structure-go)                        |
