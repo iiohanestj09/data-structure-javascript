@@ -3,3 +3,4 @@
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | [Basic Programming JavaScript](https://github.com/iiohanestj09/basic-programming-javascript) | [Data Structure C](https://github.com/iiohanestj09/data-structure-c)                          |
 |                                                                                              | [Data Structure Go](https://github.com/iiohanestj09/data-structure-go)                        |
+|                                                                                              | [Data Structure Python](https://github.com/iiohanestj09/data-structure-python)                |
