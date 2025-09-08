@@ -1,4 +1,4 @@
-/* Tree adalah struktur data yang berbasih graph.
+/* Tree adalah struktur data yang berbasis graph.
 Ia merupakan bentuk khusus dari graph:
   - Bersifat hierarkis (ada root, parent, dan child)
   - Tidak mengandung siklus (acyclic)
